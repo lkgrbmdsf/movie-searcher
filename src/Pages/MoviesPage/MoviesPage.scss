@@ -1,0 +1,53 @@
+.main {
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-aspect-ratio: 4/4) {
+  .main {
+    .card-list {
+      margin-top: 2vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1vw;
+
+      .card {
+        img {
+          padding: 0.5vh;
+        }
+
+        .info {
+          margin: 0;
+          padding: 0;
+
+          .bottom-block {
+            .genres,
+            .bookmarks {
+              margin: 1vh;
+            }
+
+            .genres {
+              gap: 0.2vh;
+              min-height: 5vh;
+
+              .genres-item {
+                padding: 0 1vh;
+              }
+            }
+
+            .bookmarks {
+              padding: 1vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}

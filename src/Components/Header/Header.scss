@@ -1,0 +1,36 @@
+.header {
+  height: 10vh;
+  padding: 0 10vw;
+  box-shadow: -1px 0px 6px 0px rgba(226, 224, 224, 0.699);
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo,
+  .bookmarks {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 100%;
+    padding: 0 2vw;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: inset 0px -2px 0px 0px lightsteelblue;
+      color: lightsteelblue;
+
+      &:active {
+        background-color: lightslategrey;
+      }
+    }
+  }
+}

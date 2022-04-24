@@ -1,0 +1,81 @@
+.card {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 0px 6px 0px rgba(226, 224, 224, 0.699);
+  border-radius: 20px;
+
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: -1px 0px 6px 0px lightsteelblue;
+  }
+
+  img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    padding: 2vw;
+    border-radius: 20px;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+
+    .bottom-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .genres,
+      .bookmarks {
+        margin: 2vw;
+      }
+
+      .genres {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.2vw;
+        min-height: 5vh;
+
+        .genres-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 2vw;
+
+          border: 2px solid lightsteelblue;
+        }
+      }
+
+      .bookmarks {
+        background-color: lightsteelblue;
+        text-align: center;
+        padding: 2vw;
+        border-radius: 10px;
+        font-weight: 500;
+
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          color: white;
+
+          &:active {
+            background-color: lightslategrey;
+          }
+        }
+      }
+    }
+  }
+}

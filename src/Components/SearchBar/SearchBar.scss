@@ -1,0 +1,28 @@
+.form {
+  margin-top: 2vh;
+  width: 100%;
+  appearance: none;
+
+  transition: all 0.2s;
+
+  input {
+    height: 10vh;
+    border: none;
+    width: 100%;
+    text-align: start;
+    padding: 0 2vw;
+    font-size: 25px;
+    border-radius: 10px;
+
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      box-shadow: -1px 0px 6px 0px lightsteelblue;
+    }
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
