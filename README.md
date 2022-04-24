@@ -16,11 +16,11 @@
 ### What is does
 
  - Main page is consist of:
-   - search bar in which you may search for movies
+   - search bar in which user may search for movies
    - list of popular movies by default
    - pagination 
  - Details page in which:
    - detailed info about the movie
-   - list of similar movies you may click and go on
+   - list of similar movies user may click and go on
  - Bookmarks page with movies user added 
  - 404 page 
