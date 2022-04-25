@@ -7,7 +7,7 @@
  - Start the project `npm run start`
 
 
-### Technologies been used 
+### Technologies being used 
 
  - React Hooks
  - React-redux 
