@@ -24,3 +24,7 @@
    - list of similar movies user may click and go on
  - Bookmarks page with movies user added 
  - 404 page 
+
+### Deploy
+
+https://movie-srchr.herokuapp.com/
