@@ -16,6 +16,11 @@ export default function BookmarksPage() {
     history.push(`/${id}`);
   };
 
+  const handleBookmarks = (e, id) => {
+    e.stopPropagation();
+    BOOKMARKS_HANDLER.removeFromBookmarks(id, bookmarks, setBookmarks);
+  };
+
   if (!bookmarks.length)
     return <h1 className="no-info">Wops! there's no any</h1>;
   return (
@@ -46,12 +51,7 @@ export default function BookmarksPage() {
                     color: "#e46464",
                   }}
                   onClick={(e) => {
-                    e.stopPropagation();
-                    BOOKMARKS_HANDLER.removeFromBookmarks(
-                      movie.id,
-                      bookmarks,
-                      setBookmarks
-                    );
+                    handleBookmarks(e, movie.id);
                   }}
                 />
               </div>
